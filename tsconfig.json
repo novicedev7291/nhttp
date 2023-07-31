@@ -1,28 +1,16 @@
 {
   "compilerOptions": {
-    "target": "es2017",
+    "target": "es6",
     "module": "commonjs",
-    "lib": ["dom", "es6", "es2017", "esnext.asynciterable"],
+    "lib": ["es6"],
     "skipLibCheck": true,
     "sourceMap": false,
     "outDir": "./dist",
-    "moduleResolution": "node",
-    "removeComments": true,
-    "noImplicitAny": true,
-    "strictNullChecks": true,
-    "strictFunctionTypes": true,
-    "noImplicitThis": true,
-    "noUnusedLocals": false,
-    "noUnusedParameters": false,
-    "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "baseUrl": "./src",
     "esModuleInterop": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "resolveJsonModule": true,
-    "baseUrl": "."
   },
-  "exclude": ["node_modules"],
-  "include": ["./src/**/*.ts", "./test/**/*.spec.ts"]
+  "exclude": ["node_modules", "__tests__", "jest.config.ts"],
+  "include": ["./**/*.ts"]
 }
